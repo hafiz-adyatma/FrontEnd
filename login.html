@@ -1,0 +1,54 @@
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login Library</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link href="login.css" rel="stylesheet">
+    <script defer src="login.js"></script>
+  </head>
+
+  <body>
+
+    <div class="global-container">
+      <div class="card login-form">
+            <h1 style="color: #6372FF; font-style: italic ;" class="card-tittle text-center">Log In</h1>
+            <img src="logo.jpeg" alt="">
+       
+            <div class="card-text">
+          <form id="form" action="#">
+                <div class="mb-2">
+                      <label for="username" class="form-label">Username</label>
+                        <input type="text" class="form-control" id="username">
+                        <div class="error"></div>
+                    </div>
+                    <div class="mb-2">
+                      <label for="password" class="form-label">Password</label>                      
+                        <input type="password" class="form-control" id="password">
+                        <div class="error"></div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridcheck" onclick="setcookie()">
+                        <label class="form-check-label" for="gridcheck">
+                          Remember Me
+                        </label>
+                        <div class="error"></div>
+                      </div>
+                <button type= "submit" class="btn btn-primary"> Log In </button>  
+          </form>
+          <div>
+            <p type="text" class="remin"> Don't have an account?<a href="signUp.html"> Sign Up</a> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+
+</html>

@@ -1,0 +1,95 @@
+html, body{
+    height: 100%;
+    background-image: url(library.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  
+}
+
+.global-container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form{
+    align-items: center;
+    width: 399px;
+    height: 550px;
+    padding: 0px;
+    padding-top: 0px;
+    border: 1px solid;
+    border-radius: 0px;
+    border-color: #6372FF;
+}
+
+.login-form .card-text.success input {
+    border-color: green;
+}
+
+.login-form .card-text.error input {
+    border-color: red;
+}
+
+img{
+    width: 60px;
+    height: 60px;
+    float: right;
+    position: absolute; 
+    left: 91.6%; 
+    top: 0.7%;
+    transform: translateY(-50%);
+    transform: translateX(-50%)
+}
+
+.card-tittle{
+    width: 398px;
+    height: 70px;
+    font-size: 25px;
+    font-family: Arial;
+    font-weight: bold;
+    text-emphasis-color: #6372FF;
+    padding-top: 18px;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+    background-color: #1642B44D;
+    
+}   
+
+
+.btn{
+    margin-top: 20px;
+    width: 200px;
+    border: 1px;
+    border-radius: 0px;
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%)
+    
+}
+
+.regis {
+    color: white;
+}
+
+.remin{
+    margin-top: 60px;
+    font-size: 12px;
+    font-style: bold;
+    font-family: Arial;
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%)
+}
+
+input[type="email"],
+input[type="text"],
+input[type="password"]{
+    font-family: Arial;
+    width: 300px;
+    height: 30px;
+    border: 1px solid;
+    border-radius: 0px;
+}
