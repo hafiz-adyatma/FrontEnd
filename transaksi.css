@@ -4,7 +4,6 @@ body{
 
     font-family: 'Urbanist', sans-serif;
     overflow-x: hidden;
-    /* background-color: #B6C3E5; */
     background-color: #B6C3E5;
     background-position: center;
     background-size: cover;
@@ -152,6 +151,7 @@ header .container-fluid{
 .text-wel{
     position: absolute;
     margin-top: 200px;
+    margin-left: 200px;
     transform: translateX(50%);
     left: -9.8%;
     font-size: 30px;
@@ -213,16 +213,40 @@ header .item:hover{
     border-top: 3px solid #ffffff;
 }
 
+.card-text {
+    background-color: white;
+    margin-top: 100px;
+    margin-left: 500px;
+    margin-right: 300px;
+    height: 60%;
+    border-radius: 0.25%;
+}
+
+.form-label {
+    margin-top: 15px;
+    margin-left: 32px;
+    transform: translateY(170%);
+    
+}
+
+.btn {
+    margin-top: 15px;
+    margin-left: 600px;
+}
+
+
+
+
 header .item-button a{
 
     background-color: #0854C6;
-    width: 150px;
+    width: 100px;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 16px;
-    margin-left: 500px;
+    margin-left: 100px;
     color: #fff;
     transition: all .5s ease;
     border: 1px solid black;
@@ -241,21 +265,23 @@ header .mobile-toggler{
     display: flex;  
     font-size: 30px;
     margin-top: 10px;
-    margin-left: 200px;
+    margin-left: 50px;
     cursor: pointer;
 }
 
 
 .search-box{
+    width: 15%;
     display: flex;
     border: 1px solid black;
     background-color: #D9D9D9;
     padding: 8px 16px;
-    border-radius: 15px;
-    margin-top: 10px;
-    margin-left: 20px;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-left: 10px;
     outline: none;
     border: none;
+    transform: translateX(-95%);
     
 }
 
@@ -273,6 +299,7 @@ header .mobile-toggler{
 
     background-color: unset;
     margin-left: 10px;
+    margin-top: 0px;
     outline: none;
     border: none;
     
@@ -436,4 +463,14 @@ header .mobile-toggler{
 .mobile-modal-footer .yt:hover{
 
     color: #ff2121;
+}
+
+input[type = "radio"],
+input[type = "text"]{
+    border-radius: 0px;
+    border: 1px solid black;
+    width: 400px;
+    height: 25px;
+    margin-top: 10px;
+    margin-left: 250px;
 }
