@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+
+    <link rel="stylesheet" href="/fontawesome/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css
+    ">
+    <link rel="stylesheet" href="/css/anggota.css">
+</head>
+
+<body>
+
+
+    <header>
+
+        <div class="container-fluid">
+
+            <div class="navb-logo">
+                <img src="/src/BingkaiPerpus2.jpg" alt="Logo">
+            </div>
+
+            <p class="text-wel" type="text">
+                Daftar Buku
+            </p>
+
+            <div class="card">
+
+            </div>
+                        <!-- Button trigger modal -->
+                <div class="mobile-toggler">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#navbModal">
+                        <i class="fa-solid fa-bars"></i>
+                            </a>
+                </div>
+
+            <div class="navb-items d-none d-xl-flex">
+                <div class="search-box">
+                    <div class="search-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="search-input">
+                        <input type="text" class="input" placeholder="Search...">
+                    </div>
+                </div>
+
+                <div class="item-button">
+                    <a href="/contact" type="button">Profile</a>
+                </div>
+            </div>
+
+
+            <div class="card-body">
+
+                <div class="btn btn-primary">
+                    Tambah
+                </div>
+                <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th scope="col">No</th>
+                        <th scope="col">Kode Buku</th>
+                        <th scope="col">Nama Buku</th>
+                        <th scope="col">Pengarang</th>
+                        <th scope="col">Klasifikasi</th>
+                        <th scope="col">Aksi</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th class="row1" scope="row">1</th>
+                        <td>A001</td>
+                        <td>Roman Picisan</td>
+                        <td>Diego</td>
+                        <td>Romance</td>
+                        <td><i class="fa-solid fa-pencil"></i> &emsp; <i class="fa-solid fa-trash-can"></i></td>
+                      </tr>
+
+                      <tr>
+                        <th class="row1" scope="row">2</th>
+                        <td>A002</td>
+                        <td>Cimeng</td>
+                        <td>Primus</td>
+                        <td>Novel</td>
+                        <td><i class="fa-solid fa-pencil"></i> &emsp; <i class="fa-solid fa-trash-can"></i></td>
+                      </tr>
+
+                      <tr>
+                        <th class="row1" scope="row">3</th>
+                        <td>A003</td>
+                        <td>MU</td>
+                        <td>Lord Maguire</td>
+                        <td>Sport</td>
+                        <td><i class="fa-solid fa-pencil"></i> &emsp; <i class="fa-solid fa-trash-can"></i></td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+
+
+
+            
+
+            <!-- Modal -->
+            <div class="modal fade" id="navbModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <img src="/src/BingkaiPerpus2.jpg" alt="Logo2">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+                        </div>
+
+                        <div class="modal-body">
+
+                            <div class="modal-line">
+                                <i class="fa-solid fa-address-card"></i><a href="/profil">Profil</a>
+                            </div>
+                            
+                            <div class="modal-line">
+                                <i class="fa-solid fa-house"></i><a href="/">Beranda</a>
+                            </div>
+
+                            <div class="modal-line">
+                                <i class="fa-solid fa-database"></i><a href="/services">Data Anggota</a>
+                            </div>
+
+                            <div class="modal-line">
+                                <i class="fa-solid fa-book"></i><a href="/services">Data Buku</a>
+                            </div>
+
+                            <div class="modal-line">
+                                <i class="fa-solid fa-file-lines"></i> <a href="/cases">Transaksi Pinjaman</a>
+                            </div>
+
+                            <div class="modal-line">
+                                <i class="fa-solid fa-rotate-left"></i><a href="/DataP">Data Pengembalian</a>
+                            </div>
+
+                            <a href="/contact" class="navb-button" type="button">Log Out</a>
+                        </div>
+
+                        <div class="mobile-modal-footer">
+                            
+                            <a target="_blank" href="#"><i class="ig fa-brands fa-instagram"></i></a>
+                            <a target="_blank" href="#"><i class="lnkd fa-brands fa-linkedin-in"></i></a>
+                            <a target="_blank" href="#"><i class="yt fa-brands fa-youtube"></i></a>
+                            <a target="_blank" href="#"><i class="fb fa-brands fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js
+    "></script>
+</body>
+
