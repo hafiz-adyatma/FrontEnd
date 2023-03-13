@@ -465,6 +465,23 @@ header .mobile-toggler{
     color: #ff2121;
 }
 
+.name {
+    margin-left: 32px;
+    margin-top: 50px;
+}
+
+.nama {
+    margin-left: 130px;
+    width: 402px;
+    border: 1px solid black;
+}
+
+.book {
+    margin-left: 142px;
+    width: 400px;
+    border: 1px solid black;
+}
+
 input[type = "radio"],
 input[type = "text"]{
     border-radius: 0px;
@@ -473,4 +490,10 @@ input[type = "text"]{
     height: 25px;
     margin-top: 10px;
     margin-left: 250px;
+}
+
+input[type = "date"] {
+    width: 400px;
+    margin-left: 250px;
+    border: 1px solid #000000;
 }
