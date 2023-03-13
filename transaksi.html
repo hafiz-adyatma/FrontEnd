@@ -157,23 +157,29 @@
     <div class="card-text">
         <form id="form" action="#">
        <div class="mb-2">
-             <label for="username" class="form-label">Nama</label>
-               <input type="radio" class="form-control" id="username">
-               <div class="error"></div>
-           </div>
+        <label for="nama" class="name">NIK & Nama</label>
+        <select id="nama" name="nama" class="nama">
+          <option value="john">189567534 - John Doe</option>
+          <option value="jane">678562145 - Jane Smith</option>
+          <option value="bob">098768561 - Bob Johnson</option>
+        </select>
+        </div>
            <div class="mb-2">
-             <label for="email" class="form-label">Judul Buku</label>
-             <input type="radio" class="form-control" name="" id="email">
-             <div class="error"></div>
+            <label for="nama" class="name">Judul Buku</label>
+        <select id="nama" name="nama" class="book">
+          <option value="john">A001 - John Doe</option>
+          <option value="jane">A002 - Jane Smith</option>
+          <option value="bob">A003 - Bob Johnson</option>
+        </select>
            </div>
            <div class="mb-2">
              <label for="password" class="form-label">Tanggal Peminjaman</label>                      
-               <input type="text" class="form-control" id="password">
+               <input type="date" class="form-control" id="password">
                <div class="error"></div>
            </div>
            <div class="mb-2">
              <label for="repassword" class="form-label">Tanggal Pengembalian</label>                      
-             <input type="text" class="form-control" id="repassword">
+             <input type="date" class="form-control" id="repassword">
              <div class="error"></div>
              </div>
        <button type= "submit" class="btn btn-primary" id="Register">Kirim 
