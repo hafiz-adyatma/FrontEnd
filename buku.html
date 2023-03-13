@@ -7,66 +7,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Navbar</title>
 
-    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="/fontawesome/css/all.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css
     ">
-    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="buku.css">
 </head>
 
 <body>
+
 
     <header>
 
         <div class="container-fluid">
 
             <div class="navb-logo">
-                <img src="src/BingkaiPerpus2.jpg" alt="Logo">
+                <img src="/src/BingkaiPerpus2.jpg" alt="Logo">
             </div>
 
             <p class="text-wel" type="text">
-                Selamat Datang di Bingkai Perpus
+                Daftar Buku
             </p>
 
             <div class="card">
 
             </div>
-
-            <!-- Button trigger modal -->
-            <div class="mobile-toggler">
-                <ahref="#" data-bs-toggle="modal" data-bs-target="#navbModal">
-                    <i class="fa-solid fa-bars"></i>
-                </a>
-            </div>
-
-
+                        <!-- Button trigger modal -->
+                <div class="mobile-toggler">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#navbModal">
+                        <i class="fa-solid fa-bars"></i>
+                            </a>
+                </div>
 
             <div class="navb-items d-none d-xl-flex">
-
-                <div class="card-all">
-                    <div class="card-menu">
-                        <div class="card-body">
-                          <p class="card-text"> Pengembalian <i class="fa-sharp fa-solid fa-list-check"></i></p>
-                        </div>
-                    </div>
-    
-                    <div class="card-menu2">
-                        <div class="card-body">
-                          <p class="card-text">Peminjaman <i class="fa-solid fa-user-plus"></i></p>
-                        </div>
-                    </div>
-                    <div class="card-menu3">
-                        <div class="card-body">
-                          <p class="card-text">Anggota <i class="fa-sharp fa-solid fa-circle-user"></i></p>
-                        </div>
-                    </div>
-                    <div class="card-menu4">
-                        <div class="card-body">
-                          <p class="card-text">Buku <i class="fa-sharp fa-solid fa-book"></i></p>
-                        </div>
-                    </div>
-                </div>
-                
-
                 <div class="search-box">
                     <div class="search-icon">
                         <i class="fa-solid fa-magnifying-glass"></i>
@@ -76,29 +48,63 @@
                     </div>
                 </div>
 
-                <!-- <div class="item">
-                    <a href="/">Dashboard</a>
-                </div>
-
-                <div class="item">
-                    <a href="/services">Data</a>
-                </div>
-
-                <div class="item">
-                    <a href="/cases">Transaksi</a>
-                </div> -->
-
-                <!-- <div class="item">
-                    <a href="/about">About</a>
-                </div> -->
-
                 <div class="item-button">
-                    <a href="contact" type="button">Profile</a>
+                    <a href="/contact" type="button">Profile</a>
                 </div>
             </div>
 
-           
-              </div>
+
+            <div class="card-body">
+
+                <div class="btn btn-primary">
+                    Tambah
+                </div>
+                <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th scope="col">No</th>
+                        <th scope="col">Kode Buku</th>
+                        <th scope="col">Nama Buku</th>
+                        <th scope="col">Pengarang</th>
+                        <th scope="col">Klasifikasi</th>
+                        <th scope="col">Aksi</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th class="row1" scope="row">1</th>
+                        <td>A001</td>
+                        <td>Roman Picisan</td>
+                        <td>Diego</td>
+                        <td>Romance</td>
+                        <td><i class="fa-solid fa-pencil"></i> &emsp; <i class="fa-solid fa-trash-can"></i></td>
+                      </tr>
+
+                      <tr>
+                        <th class="row1" scope="row">2</th>
+                        <td>A002</td>
+                        <td>Cimeng</td>
+                        <td>Primus</td>
+                        <td>Novel</td>
+                        <td><i class="fa-solid fa-pencil"></i> &emsp; <i class="fa-solid fa-trash-can"></i></td>
+                      </tr>
+
+                      <tr>
+                        <th class="row1" scope="row">3</th>
+                        <td>A003</td>
+                        <td>MU</td>
+                        <td>Lord Maguire</td>
+                        <td>Sport</td>
+                        <td><i class="fa-solid fa-pencil"></i> &emsp; <i class="fa-solid fa-trash-can"></i></td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+
+
+
+            
 
             <!-- Modal -->
             <div class="modal fade" id="navbModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -107,7 +113,7 @@
                     <div class="modal-content">
 
                         <div class="modal-header">
-                            <img src="src/BingkaiPerpus2.jpg" alt="Logo2">
+                            <img src="/src/BingkaiPerpus2.jpg" alt="Logo2">
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
                         </div>
 
@@ -158,4 +164,3 @@
     "></script>
 </body>
 
-</html>
