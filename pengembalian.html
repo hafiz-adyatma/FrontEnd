@@ -55,10 +55,6 @@
 
 
             <div class="card-body">
-
-                <div class="btn btn-primary">
-                    Tambah
-                </div>
                 <table class="table table-striped">
 
                     <thead>
@@ -67,8 +63,11 @@
                         <th scope="col">Code Buku</th>
                         <th scope="col">Nama</th>
                         <th scope="col">Tanggal Pinjam</th>
+                        <th scope="col">Ekspektasi Pengembalian</th>
                         <th scope="col">Tanggal Pengembalian</th>
                         <th scope="col">Status</th>
+                        <th scope="col">Aksi</th>
+                        <th scope="col">  </th>
                       </tr>
                     </thead>
 
@@ -78,8 +77,19 @@
                                 <td>A001</td>
                                 <td>Didi</td>
                                 <td>22-01-2023</td>
-                                <td>25-01-2023</td>
+                                <td>25-01-2023</td>   
+                                <td><input class="date" type="date"></td>              
                                 <td><i class="ck fa-solid fa-check"></i></td>
+                                <td><!-- Button trigger modal -->
+                                    <button type="button" class="X btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                      <i style="color: white;" class="ck fa-solid fa-check"></i>
+                                  </button>
+                              </td>
+                                <td>
+                                    <button type="button" class="X btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        <i style="color: white;" class="cc fa-solid fa-xmark"></i>
+                                    </button>
+                                </td>
                               </tr>
         
                               <tr>
@@ -88,7 +98,18 @@
                                 <td>Rompis</td>
                                 <td>23-02-2023</td>
                                 <td>30-02-2023</td>
+                                <td><input class="date" type="date"></td>  
                                 <td><i class="cc fa-solid fa-xmark"></i></td>
+                                <td><!-- Button trigger modal -->
+                                      <button type="button" class="X btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        <i style="color: white;" class="ck fa-solid fa-check"></i>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button" class="X btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        <i style="color: white;" class="cc fa-solid fa-xmark"></i>
+                                    </button>
+                                </td>
                               </tr>
         
                               <tr>
@@ -97,13 +118,42 @@
                                 <td>Marco</td>
                                 <td>25-08-2023</td>
                                 <td>29-08-2023</td>
+                                <td><input class="date" type="date"></td>  
                                 <td><i class="ck fa-solid fa-check"></i></td>
-                              </tr> 
+                                <td><!-- Button trigger modal -->
+                                    <button type="button" class="X btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                      <i style="color: white;" class="ck fa-solid fa-check"></i>
+                                  </button>
+                              </td>
+                                <td>
+                                    <button type="button" class="X btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        <i style="color: white;" class="cc fa-solid fa-xmark"></i>
+                                    </button>
+                                </td>
+                              </tr>  
                             </tbody>
 
                   </table>
             </div>
         </div>
+         <!-- Modal -->
+         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Simpan Perubahan</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Apakah Anda yakin?
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                  <button type="button" class="btn btn-primary">Simpan</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
 
 
@@ -112,44 +162,44 @@
             <!-- Modal -->
             <div class="modal fade" id="navbModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                 aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
+                <div class="md2 modal-dialog">
+                    <div class="mc2 modal-content">
 
                         <div class="modal-header">
-                            <img src="src/BingkaiPerpus2.jpg" alt="Logo2">
+                            <img src="/src/BingkaiPerpus2.jpg" alt="Logo2">
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
                         </div>
 
-                        <div class="modal-body">
+                        <div class="my2 modal-body2">
 
-                            <div class="modal-line">
+                            <div class="ml2 modal-line">
                                 <i class="fa-solid fa-address-card"></i><a href="/profil">Profil</a>
                             </div>
                             
-                            <div class="modal-line">
+                            <div class="ml2 modal-line">
                                 <i class="fa-solid fa-house"></i><a href="dashboard.html">Beranda</a>
                             </div>
 
-                            <div class="modal-line">
+                            <div class="ml2 modal-line">
                                 <i class="fa-solid fa-database"></i><a href="angggota.html">Data Anggota</a>
                             </div>
 
-                            <div class="modal-line">
+                            <div class="ml2 modal-line">
                                 <i class="fa-solid fa-book"></i><a href="buku.html">Data Buku</a>
                             </div>
 
-                            <div class="modal-line">
+                            <div class="ml2 modal-line">
                                 <i class="fa-solid fa-file-lines"></i> <a href="transaksi.html">Transaksi Pinjaman</a>
                             </div>
 
-                            <div class="modal-line">
+                            <div class="ml2 modal-line">
                                 <i class="fa-solid fa-rotate-left"></i><a href="pengembalian.html">Data Pengembalian</a>
                             </div>
 
                             <a href="/contact" class="navb-button" type="button">Log Out</a>
                         </div>
 
-                        <div class="mobile-modal-footer">
+                        <div class="mf2 mobile-modal-footer">
                             
                             <a target="_blank" href="#"><i class="ig fa-brands fa-instagram"></i></a>
                             <a target="_blank" href="#"><i class="lnkd fa-brands fa-linkedin-in"></i></a>
